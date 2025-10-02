@@ -1,0 +1,54 @@
+.splash {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+  font-size: 48px;
+  text-shadow: 0 0 15px var(--glow-color);
+  flex-direction: column;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinker {
+  animation: blinking 800ms infinite;
+}
+
+@keyframes loadBar {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: row;
+  width: 18vw;
+  height: 5px;
+  justify-content: flex-start;
+}
+
+.bar {
+  background-color: var(--accent-color);
+  height: 100%;
+  animation: loadBar 4s;
+}
