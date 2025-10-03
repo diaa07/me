@@ -1,12 +1,32 @@
+import React, { useState, useEffect } from "react";
 import Splash from "./components/Splash";
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <Splash />
-    </>
-  );
+  const [showSplash, setShowSplash] = useState(true);
+  const [splashFade, setSplashFade] = useState(false);
+  useEffect(() => {
+    const splashDuration = 5500;
+    const fadeDuration = 1500;
+    const splashTimer = setTimeout(() => {
+      setShowSplash(false);
+    }, splashDuration);
+    const splashFadeTimer = setTimeout(() => {
+      setSplashFade(true);
+    }, splashDuration - fadeDuration);
+    return () => {
+      clearTimeout(splashTimer);
+      clearTimeout(splashFadeTimer);
+    };
+  }, []);
+
+  if (showSplash) {
+    return (
+      <>
+        <Splash isFadingOut={splashFade}></Splash>
+      </>
+    );
+  }
 }
 
 export default App;

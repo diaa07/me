@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Splash.css";
 
-export default function Splash() {
+export default function Splash({ isFadingOut }) {
   const [text, setText] = useState("");
   const fullText = "<Hello world!>";
   const [isDeleting, setIsDeleting] = useState(false);
@@ -31,7 +31,7 @@ export default function Splash() {
     };
   }, [index, isDeleting, text]);
   return (
-    <div className="splash">
+    <div className={`splash ${isFadingOut ? "fade" : ""}`}>
       <div className="splash-text">
         {text}
         <span className="blinker">|</span>
