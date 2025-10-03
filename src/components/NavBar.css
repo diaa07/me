@@ -1,0 +1,70 @@
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 16px;
+  font-size: 32px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.desktop-right-section ul {
+  list-style-type: none;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.desktop-right-section li {
+  margin: 0px 16px;
+  margin-top: 4px !important;
+  cursor: pointer;
+  position: relative;
+  transition: all ease 0.3s;
+}
+
+.desktop-right-section li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 5px var(--glow-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.desktop-right-section li:hover::after {
+  width: 100%;
+}
+
+.nav-left-section {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.nav-right-section {
+  margin-right: 20px;
+}
+
+.nav-left-section .logo .logo-span {
+  color: var(--accent-color);
+  text-shadow: 0px 0px 15px var(--glow-color);
+}
+
+.desktop-right-section li:hover {
+  color: var(--accent-color);
+  text-shadow: 0 0 10px var(--glow-color);
+}
+
+.desktop-right-section li:active {
+  scale: 0.8;
+}

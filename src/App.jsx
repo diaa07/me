@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Splash from "./components/Splash";
 import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -27,6 +28,13 @@ function App() {
       </>
     );
   }
+  return (
+    <>
+      <div className="app">
+        <NavBar></NavBar>
+      </div>
+    </>
+  );
 }
 
 export default App;
