@@ -1,6 +1,6 @@
 .splash {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,4 +51,13 @@
   background-color: var(--accent-color);
   height: 100%;
   animation: loadBar 4s;
+}
+
+@media (max-width: 700px) {
+  .splash {
+    font-size: 36px;
+  }
+  .bar-container {
+    width: 40vw;
+  }
 }
