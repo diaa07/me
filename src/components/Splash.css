@@ -1,6 +1,6 @@
 .splash {
   opacity: 1;
-  width: 100vw;
+  width: 100dvw;
   height: 100dvh;
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@
 .bar-container {
   display: flex;
   flex-direction: row;
-  width: 18vw;
+  width: 18dvw;
   height: 5px;
   justify-content: flex-start;
 }
@@ -64,6 +64,6 @@
     font-size: 36px;
   }
   .bar-container {
-    width: 40vw;
+    width: 40dvw;
   }
 }

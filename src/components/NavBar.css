@@ -1,5 +1,5 @@
 nav {
-  width: 100vw;
+  width: 100dvw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,6 +9,8 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: var(--primary-bg);
+  padding-bottom: 20px;
 }
 
 .desktop-right-section ul {
@@ -89,8 +91,8 @@ nav {
   z-index: 10000;
   position: fixed;
   top: 120px;
-  left: 15vw;
-  width: 70vw;
+  left: 15dvw;
+  width: 70dvw;
   height: auto;
   padding-top: 32px;
   padding-bottom: 48px;

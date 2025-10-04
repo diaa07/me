@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Splash from "./components/Splash";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -32,6 +33,7 @@ function App() {
     <>
       <div className="app">
         <NavBar></NavBar>
+        <Home></Home>
       </div>
     </>
   );
