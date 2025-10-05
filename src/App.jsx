@@ -3,6 +3,7 @@ import Splash from "./components/Splash";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -29,9 +30,10 @@ function App() {
       ) : (
         <></>
       )}
-      <div className={`app ${showSplash ? "hidden" : ""}`} id="app">
+      <div className={`app ${showSplash ? "hidden" : "displayed"}`} id="app">
         <NavBar></NavBar>
         <Home></Home>
+        <About />
       </div>
     </>
   );
