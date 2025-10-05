@@ -2,3 +2,7 @@
   width: 100dvw;
   background-color: var(--primary-bg);
 }
+
+.hidden {
+  display: none !important;
+}

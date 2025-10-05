@@ -22,16 +22,14 @@ function App() {
     };
   }, []);
 
-  if (showSplash) {
-    return (
-      <>
-        <Splash isFadingOut={splashFade}></Splash>
-      </>
-    );
-  }
   return (
     <>
-      <div className="app">
+      {showSplash ? (
+        <Splash isFadingOut={splashFade} id="splash"></Splash>
+      ) : (
+        <></>
+      )}
+      <div className={`app ${showSplash ? "hidden" : ""}`} id="app">
         <NavBar></NavBar>
         <Home></Home>
       </div>
