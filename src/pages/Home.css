@@ -64,15 +64,15 @@
 @media (max-width: 760px) {
   .home {
     flex-direction: column;
-    padding-left: 28px;
+    padding-left: 24px;
   }
   .home-left-section .hi {
-    font-size: 28px;
+    font-size: 20px;
   }
   .home-left-section .hint {
-    font-size: 36px;
+    font-size: 26px;
   }
   .home-left-section .hint-third {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
