@@ -60,3 +60,19 @@
 .main-cta-button:hover {
   box-shadow: 0px 0px 20px var(--accent-color);
 }
+
+@media (max-width: 760px) {
+  .home {
+    flex-direction: column;
+    padding-left: 28px;
+  }
+  .home-left-section .hi {
+    font-size: 28px;
+  }
+  .home-left-section .hint {
+    font-size: 36px;
+  }
+  .home-left-section .hint-third {
+    font-size: 24px;
+  }
+}
