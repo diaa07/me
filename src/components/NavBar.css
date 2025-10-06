@@ -84,6 +84,7 @@ nav {
   }
   .nav-left-section {
     margin-left: 12px;
+    font-size: 30px;
   }
   .nav-right-section {
     margin-right: 12px;
@@ -95,7 +96,7 @@ nav {
   display: flex;
   z-index: 10000;
   position: fixed;
-  top: 100px;
+  top: 70px;
   right: 50px;
   width: 40dvw;
   height: auto;
