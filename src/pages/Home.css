@@ -97,8 +97,16 @@
 
 @media (max-width: 760px) {
   .home {
-    flex-direction: column;
-    height: auto !important;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-right-section {
+    margin-top: 100px;
+    margin-bottom: 32px;
+  }
+  .home-left-section {
+    text-align: center;
   }
   .home-left-section .hi {
     font-size: 20px;
@@ -116,6 +124,9 @@
   }
   .main-cta-button {
     margin-top: 0;
+  }
+  .home-right-section img {
+    width: 60%;
   }
 }
 
