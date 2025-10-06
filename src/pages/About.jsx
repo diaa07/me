@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import "./About.css";
 export default function About() {
   const aboutMe =
@@ -23,9 +24,32 @@ export default function About() {
     "Scratch",
   ];
 
+  const aboutContainerRef = useRef(null);
+
+  useEffect(() => {
+    const container = aboutContainerRef.current;
+    if (!container) return;
+    const aboutElements = container.querySelectorAll(".about-block");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-about");
+        } else {
+          entry.target.classList.remove("show-about");
+        }
+      });
+    }, {});
+    aboutElements.forEach((el) => {
+      observer.observe(el);
+    });
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const languages = ["Arabic (Native)", "English (B2 - Upper Intermediate)"];
   return (
-    <div className="about">
+    <div className="about" ref={aboutContainerRef}>
       <div className="about-left-section">
         <div className="about-block">
           <h1>About me</h1>
@@ -46,7 +70,7 @@ export default function About() {
           <ul>
             {career.map((car, index) => {
               return (
-                <li id={index * 107}>
+                <li key={index * 107}>
                   <h2>-{car}</h2>
                 </li>
               );
@@ -60,7 +84,7 @@ export default function About() {
             <h1>Skills</h1>
             {skills.map((skill, index) => {
               return (
-                <div className="skill" id={index * 2023}>
+                <div className="skill" key={index * 2023}>
                   {skill}
                 </div>
               );
@@ -73,7 +97,7 @@ export default function About() {
             <ul>
               {languages.map((language, index) => {
                 return (
-                  <li className="lang" id={index * 191}>
+                  <li className="lang" key={index * 191}>
                     <h2>-{language}</h2>
                   </li>
                 );

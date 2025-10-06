@@ -7,12 +7,6 @@
   align-items: center;
 }
 
-.about-block {
-  border: 3px solid var(--accent-color);
-  padding: 20px;
-  border-radius: 24px;
-}
-
 .about-left-section {
   flex: 1;
   margin-left: 80px;
@@ -39,7 +33,18 @@
 }
 
 .about-block {
+  border: 3px solid var(--accent-color);
+  padding: 20px;
+  border-radius: 24px;
   margin-bottom: 16px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.about-block.show-about {
+  opacity: 1;
+  transform: translateX(0%);
 }
 
 .about-right-section {
