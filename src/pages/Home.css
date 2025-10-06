@@ -98,22 +98,21 @@
 @media (max-width: 760px) {
   .home {
     flex-direction: column;
-    padding-left: 12px;
     height: auto !important;
   }
   .home-left-section .hi {
-    font-size: 12px;
+    font-size: 10px;
   }
   .home-left-section .hint {
-    font-size: 18px;
+    font-size: 14px;
   }
   .home-left-section .hint-third {
-    font-size: 10px;
+    font-size: 8px;
     margin-top: 12px;
     margin-bottom: 16px;
   }
   .home-left-section {
-    padding-left: 12px;
+    padding-left: 10px;
   }
 }
 
