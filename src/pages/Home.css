@@ -50,13 +50,15 @@
   width: 90%;
   aspect-ratio: 1;
   object-fit: contain;
-  background: radial-gradient(
-    circle at center,
-    var(--accent-color),
-    var(--glow-color),
-    var(--primary-bg)
-  );
+  animation: loadBG 0.8s ease-out;
   border-radius: 50%;
+  background: radial-gradient(
+      circle at center,
+      var(--accent-color),
+      var(--glow-color),
+      var(--primary-bg)
+    )
+    no-repeat center center;
 }
 
 .home-left-section .hint-third {
@@ -86,6 +88,15 @@
   animation: vibrate 0.5s ease infinite;
 }
 
+@keyframes loadBG {
+  0% {
+    background-size: 0 0;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
 @keyframes vibrate {
   25% {
     transform: rotate(5deg);
@@ -102,8 +113,8 @@
     align-items: center;
   }
   .home-right-section {
-    margin-top: 100px;
     margin-bottom: 32px;
+    margin-top: 20px;
   }
   .home-left-section {
     text-align: center;
