@@ -63,3 +63,17 @@
 .skill:hover {
   scale: 1.1;
 }
+
+@media (max-width: 760px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-left-section,
+  .about-right-section {
+    margin: 24px;
+    padding: 20px;
+    flex: unset;
+  }
+}
