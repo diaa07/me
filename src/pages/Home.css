@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   height: 100dvh;
+  padding-right: 0;
   padding-bottom: 0;
   padding-top: 80px;
 }
@@ -13,8 +14,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
+  flex-wrap: wrap;
+  max-width: max-content;
+  padding-left: 48px;
 }
 
 .home-left-section .hi {
@@ -31,17 +35,34 @@
 }
 
 .home-right-section {
+  padding: 0;
+  margin: 0;
   flex: 1;
-  padding-right: 62px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
 
 .home-right-section img {
-  width: 100%;
-  margin-bottom: 0;
+  width: 90%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: radial-gradient(
+    circle at center,
+    var(--accent-color),
+    var(--glow-color),
+    var(--primary-bg)
+  );
+  border-radius: 50%;
 }
 
 .home-left-section .hint-third {
   font-size: 24px;
+  white-space: normal;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 .main-cta-button {
@@ -56,10 +77,21 @@
   transition: all 0.2s ease;
   cursor: pointer;
   border-radius: 16px;
+  box-shadow: 0px 0px 10px var(--accent-color);
 }
 
 .main-cta-button:hover {
-  box-shadow: 0px 0px 20px var(--accent-color);
+  scale: 1.1;
+  animation: vibrate 0.5s ease infinite;
+}
+
+@keyframes vibrate {
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
 }
 
 @media (max-width: 760px) {
@@ -68,10 +100,22 @@
     padding-left: 24px;
   }
   .home-left-section .hi {
-    font-size: 20px;
+    font-size: 16px;
   }
   .home-left-section .hint {
-    font-size: 26px;
+    font-size: 22px;
+  }
+  .home-left-section .hint-third {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-left-section .hi {
+    font-size: 22px;
+  }
+  .home-left-section .hint {
+    font-size: 28px;
   }
   .home-left-section .hint-third {
     font-size: 18px;

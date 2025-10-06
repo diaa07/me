@@ -7,12 +7,15 @@
   align-items: center;
 }
 
+.about-block {
+  border: 3px solid var(--accent-color);
+  padding: 20px;
+  border-radius: 24px;
+}
+
 .about-left-section {
   flex: 1;
   margin-left: 80px;
-  border: 3px solid var(--accent-color);
-  padding: 24px;
-  border-radius: 24px;
 }
 
 .about-left-section h1,
@@ -43,9 +46,6 @@
   flex: 1;
   margin-left: 96px;
   margin-right: 80px;
-  border: 3px solid var(--accent-color);
-  padding: 24px;
-  border-radius: 24px;
 }
 
 .skill {
@@ -74,6 +74,8 @@
   .about-left-section,
   .about-right-section {
     margin: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 20px;
     flex: unset;
   }

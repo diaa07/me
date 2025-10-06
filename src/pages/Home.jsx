@@ -14,8 +14,12 @@ export default function Home() {
             </div>
             <div className="hint-third">
               I can help you create a{" "}
-              <span className="accent">professional website </span>
-              with <span className="accent">modern UI/UX</span>
+              <span className="accent">professional</span> ,{" "}
+              <span className="accent">fast</span> , and{" "}
+              <span className="accent">visually appealing </span>
+              website with{" "}
+              <span className="accent">clean UI and smooth UX</span> that
+              reflects your brand and keeps users engaged.
             </div>
             <button className="main-cta-button">Get in touch</button>
           </div>
