@@ -114,9 +114,12 @@
   .home-left-section {
     padding-left: 13px;
   }
+  .main-cta-button {
+    margin-top: 0;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 761px) {
   .home-left-section .hi {
     font-size: 22px;
   }
