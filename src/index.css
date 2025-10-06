@@ -18,8 +18,14 @@ body {
   background-color: var(--primary-bg);
   font-family: "Poppins", sans-serif;
   color: var(--text-primary);
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  overscroll-behavior-y: none;
 }
