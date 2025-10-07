@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100dvh;
+  min-height: calc(var(--vh, 1vh) * 100);
   justify-content: center;
   align-items: center;
-  padding: 80px 40px;
+  padding: 0px 40px;
 }
 
 .contact-title-block {
@@ -202,7 +202,7 @@
   .contact-info,
   .contact-form-area,
   .contact-title-block {
-    transform: translateY(50%);
+    transform: translateY(20%);
   }
 
   .contact-title-block h1 {

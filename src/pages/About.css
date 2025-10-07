@@ -152,14 +152,13 @@
 
   .swiper-section {
     width: 100%;
-    animation: appear2 linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 5%;
   }
 
   .swiper-slide .about-block {
-    transform: translateX(0%) !important;
-    transition: none !important;
+    transform: translateX(0%);
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   }
 
   .swiper-pagination {
@@ -223,10 +222,8 @@
 @keyframes appear2 {
   from {
     opacity: 0 !important;
-    clip-path: inset(100% 100% 0 0);
   }
   to {
     opacity: 1 !important;
-    clip-path: inset(0 0 0 0);
   }
 }

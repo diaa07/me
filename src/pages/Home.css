@@ -2,7 +2,7 @@
   display: block;
   display: flex;
   flex-direction: row;
-  height: calc(100dvh - 100px);
+  height: calc(var(--vh, 1vh) * 100 - 100px);
   padding-right: 0;
   padding-bottom: 0;
   margin-top: 100px;

@@ -1,7 +1,7 @@
 .splash {
   opacity: 1;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@
 .bar-container {
   display: flex;
   flex-direction: row;
-  width: 18dvw;
+  width: min(320px, 18vw);
   height: 5px;
   justify-content: flex-start;
 }
@@ -64,6 +64,6 @@
     font-size: 36px;
   }
   .bar-container {
-    width: 40dvw;
+    width: min(320px, 40vw);
   }
 }
