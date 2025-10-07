@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -36,6 +37,7 @@ function App() {
         <Home></Home>
         <About />
         <Projects />
+        <Contact />
       </div>
     </>
   );
