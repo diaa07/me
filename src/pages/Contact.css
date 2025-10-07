@@ -109,9 +109,11 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  background-color: transparent;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--primary-bg);
 }
 
 .social-icon img {

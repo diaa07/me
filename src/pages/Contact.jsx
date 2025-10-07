@@ -4,9 +4,9 @@ import "./Contact.css";
 
 import githubIcon from "../assets/social/github.png";
 import codeforcesIcon from "../assets/social/codeforces.png";
-import telegramIcon from "../assets/social/telegram.jpg";
-import facebookIcon from "../assets/social/facebook.jpg";
-import instagramIcon from "../assets/social/instagram.jpg";
+import telegramIcon from "../assets/social/telegram.png";
+import facebookIcon from "../assets/social/facebook.png";
+import instagramIcon from "../assets/social/instagram.png";
 
 const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_KEY;
