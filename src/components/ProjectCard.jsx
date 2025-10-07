@@ -10,7 +10,6 @@ export default function ProjectCard({ project }) {
   const [img, setImg] = useState(project.img);
   const [code, setCode] = useState("");
   const [demo, setDemo] = useState("");
-  const [proId, setProId] = useState("");
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded);
@@ -22,7 +21,6 @@ export default function ProjectCard({ project }) {
     setLongHint(project.longHint);
     setLongSkills(project.longSkills);
     setName(project.name);
-    setProId(project.id);
     setShortHint(project.shortHint);
     setShortSkills(project.shortSkills);
   }, [project]);
@@ -33,7 +31,6 @@ export default function ProjectCard({ project }) {
     setLongHint(project.longHint);
     setLongSkills(project.longSkills);
     setName(project.name);
-    setProId(project.id);
     setShortHint(project.shortHint);
     setShortSkills(project.shortSkills);
   }, []);

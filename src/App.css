@@ -1,8 +1,9 @@
 .app {
-  width: 99svw;
+  width: 100%;
   background-color: var(--primary-bg);
   padding: 0;
   margin: 0;
+  height: auto;
 }
 
 .hidden {
