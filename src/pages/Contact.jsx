@@ -106,8 +106,8 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="contact" ref={contactContainerRef}>
-      <div className="contact-title-block contact-block">
+    <div className="contact" ref={contactContainerRef}>
+      <div className="contact-title-block contact-block" id="contact">
         <h1>Get In Touch</h1>
         <h2>
           Whether it's a job opportunity, an interesting project, or just a

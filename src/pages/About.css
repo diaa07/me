@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100dvh;
+  min-height: 100svh;
   justify-content: center;
   align-items: center;
   margin: 0 !important;
@@ -63,7 +63,7 @@
 }
 
 .about-block.show-about {
-  opacity: 1;
+  opacity: 1 !important;
   transform: translateX(0%);
 }
 
@@ -155,10 +155,15 @@
   }
 
   .swiper-slide .about-block {
-    transform: translateX(0%);
-    animation: appear2 linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+    transform: translateX(0%) !important;
+    scale: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease, scale 0.5s ease !important;
+  }
+
+  .about-block.show-mobile-about {
+    scale: 1 !important;
+    opacity: 1 !important;
   }
 
   .swiper-pagination {

@@ -12,8 +12,14 @@
   --glow-color: rgba(0, 223, 255, 0.6);
   --text-primary: #ffffff;
   --text-secondary: #8b949e;
+  --nav-height: 72px;
 }
 
+/*@media (max-width: 760px) {
+  :root {
+    --nav-height: 80px;
+  }
+}*/
 body {
   background-color: var(--primary-bg);
   font-family: "Poppins", sans-serif;
@@ -35,4 +41,11 @@ html,
 body,
 #root {
   height: 100%;
+}
+
+#home,
+#about,
+#projects,
+#contact {
+  scroll-margin-top: calc(var(--nav-height) + 12px);
 }

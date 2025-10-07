@@ -53,6 +53,29 @@ export default function About() {
     };
   }, []);
 
+  const mobileAboutContainerRef = useRef(null);
+
+  useEffect(() => {
+    const container = mobileAboutContainerRef.current;
+    if (!container) return;
+    const aboutElements = container.querySelectorAll(".about-block");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-mobile-about");
+        } else {
+          entry.target.classList.remove("show-mobile-about");
+        }
+      });
+    }, {});
+    aboutElements.forEach((el) => {
+      observer.observe(el);
+    });
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const languages = ["Arabic (Native)", "English (B2 - Upper Intermediate)"];
 
   const renderLeftSectionContent = () => (
@@ -112,12 +135,12 @@ export default function About() {
   );
 
   return (
-    <div className="about" ref={aboutContainerRef}>
-      <div className="desktop-about">
+    <div className="about" id="about">
+      <div className="desktop-about" ref={aboutContainerRef}>
         <div className="about-left-section">{renderLeftSectionContent()}</div>
         <div className="about-right-section">{renderRightSectionContent()}</div>
       </div>
-      <div className="mobile-about">
+      <div className="mobile-about" ref={mobileAboutContainerRef}>
         <Swiper
           spaceBetween={50}
           slidesPerView={1}

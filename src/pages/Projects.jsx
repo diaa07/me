@@ -196,7 +196,11 @@ export default function Projects() {
 
   return (
     <div className="portfolio-page">
-      <div className="portfolio-upper-section" ref={ttlContainerRef}>
+      <div
+        className="portfolio-upper-section"
+        id="projects"
+        ref={ttlContainerRef}
+      >
         <h1 className="ttl-txt">Portfolio</h1>
         <h2 className="ttl-txt">
           I love to turn ideas into code, and I'm always working on something
