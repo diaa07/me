@@ -1,0 +1,15 @@
+.tail {
+  z-index: 1500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 8px 3px var(--glow-color);
+  will-change: transform, opacity;
+  margin: 0;
+  padding: 0;
+}

@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function NavBar() {

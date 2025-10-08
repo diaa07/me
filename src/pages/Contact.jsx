@@ -113,8 +113,7 @@ export default function Contact() {
           Whether it's a job opportunity, an interesting project, or just a
           quick question, feel free to reach out.
         </h2>
-      </div>
-
+      </div>{" "}
       <div className="contact-layout">
         <div className="contact-info contact-block">
           <h2>Contact Details</h2>

@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import MouseTail from "./components/MouseTail";
+import MouseShadow from "./components/MouseShadow";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -33,6 +35,7 @@ function App() {
         <></>
       )}
       <div className={`app ${showSplash ? "hidden" : "displayed"}`} id="app">
+        <MouseShadow />
         <NavBar></NavBar>
         <Home></Home>
         <About />
