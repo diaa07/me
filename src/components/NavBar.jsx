@@ -35,13 +35,18 @@ export default function NavBar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMenuOpen]);
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <>
       <nav className={isHidden ? "nav-hidden" : ""}>
         <div className="nav-left-section">
           <div className="logo">
-            <a href="#home">
+            <a href="#home" onClick={(e) => handleScroll(e, "home")}>
               Diaa Aldin <span className="logo-span">Dev</span>
             </a>
           </div>
@@ -51,16 +56,27 @@ export default function NavBar() {
           <div className="desktop-right-section">
             <ul className="nav-links">
               <li>
-                <a href="#home">Home</a>
+                <a href="#home" onClick={(e) => handleScroll(e, "home")}>
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about" onClick={(e) => handleScroll(e, "about")}>
+                  About
+                </a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a
+                  href="#projects"
+                  onClick={(e) => handleScroll(e, "projects")}
+                >
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -74,16 +90,30 @@ export default function NavBar() {
               <div className="nav-menu">
                 <ul>
                   <li onClick={toggleMenuOpen}>
-                    <a href="#home">Home</a>
+                    <a href="#home" onClick={(e) => handleScroll(e, "home")}>
+                      Home
+                    </a>
                   </li>
                   <li onClick={toggleMenuOpen}>
-                    <a href="#about">About</a>
+                    <a href="#about" onClick={(e) => handleScroll(e, "about")}>
+                      About
+                    </a>
                   </li>
                   <li onClick={toggleMenuOpen}>
-                    <a href="#projects">Projects</a>
+                    <a
+                      href="#projects"
+                      onClick={(e) => handleScroll(e, "projects")}
+                    >
+                      Projects
+                    </a>
                   </li>
                   <li onClick={toggleMenuOpen}>
-                    <a href="#contact">Contact</a>
+                    <a
+                      href="#contact"
+                      onClick={(e) => handleScroll(e, "contact")}
+                    >
+                      Contact
+                    </a>
                   </li>
                 </ul>
               </div>

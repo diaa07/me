@@ -20,7 +20,6 @@ export default function MouseTail() {
       };
 
       setTail((prev) => {
-        // إضافة النقطة الجديدة وتقليص الطول عند الحركة
         const newTail = [newParticle, ...prev].slice(0, MAX_TAIL_LENGTH);
         return newTail;
       });
@@ -31,16 +30,14 @@ export default function MouseTail() {
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
 
-    // دالة التنظيف: تزيل نقطة واحدة من الخلف كل 50ms لضمان الاختفاء
     const cleanupInterval = setInterval(() => {
       setTail((prev) => {
         if (prev.length > 0) {
-          // هنا يتم إرجاع المصفوفة بعد إزالة آخر عنصر (أقدم عنصر)
           return prev.slice(0, prev.length - 1);
         }
         return [];
       });
-    }, 30); // سرعة إزالة النقاط (اختفاء أسرع)
+    }, 30);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
@@ -50,7 +47,6 @@ export default function MouseTail() {
 
   return (
     <>
-      {/* تصحيح منطق العرض: استخدم map مباشرة */}
       {tail.map((p, index) => {
         const opacity = 1 - index / MAX_TAIL_LENGTH;
         const scale = 0.5 + opacity * 0.5;
