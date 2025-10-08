@@ -16,3 +16,9 @@
   opacity: 1;
   transition: opacity 0.5s ease-out;
 }
+
+@media (max-width: 720px) {
+  .mouse-glow {
+    display: none;
+  }
+}

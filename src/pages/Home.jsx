@@ -1,10 +1,30 @@
+import { useRef, useEffect } from "react";
 import "./Home.css";
 export default function Home() {
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+  useEffect(() => {
+    const container1 = leftRef.current;
+    const container2 = rightRef.current;
+    if (!container1 && !container2) return;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-sec");
+        } else {
+          entry.target.classList.remove("show-sec");
+        }
+      });
+    }, {});
+    observer.observe(container1);
+    observer.observe(container2);
+  }, []);
+
   return (
     <>
       <div className="home" id="home">
         <div className="home-left-section">
-          <div className="left-section-container">
+          <div className="left-section-container" ref={leftRef}>
             <div className="hi">Hello</div>
             <div className="hint">
               I'm Diaa Aldin <span className="accent">Drak Alsebai</span>
@@ -32,6 +52,8 @@ export default function Home() {
             src="https://i.ibb.co/gbNXf3KV/Picsart-25-10-03-14-34-00-719.png"
             alt="personal image"
             border="0"
+            className="personal-imge"
+            ref={rightRef}
           ></img>
         </div>
       </div>
