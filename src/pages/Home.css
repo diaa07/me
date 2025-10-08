@@ -119,18 +119,16 @@
   cursor: pointer;
   border-radius: 16px;
   box-shadow: 0px 0px 10px var(--accent-color);
-  animation: appearer2 1.1s ease;
+  animation: vibrate 0.8s ease infinite;
 }
 
 .main-cta-button a {
-  color: inherit;
-  text-decoration: none;
+  all: unset;
   display: inline-block;
 }
 
 .main-cta-button:hover {
-  scale: 1.1;
-  animation: vibrate 0.5s ease infinite;
+  transform: translateY(-5%) !important;
 }
 
 @keyframes loadBG {
@@ -143,11 +141,14 @@
 }
 
 @keyframes vibrate {
-  25% {
-    transform: rotate(5deg);
+  0% {
+    scale: 1;
   }
-  75% {
-    transform: rotate(-5deg);
+  50% {
+    scale: 1.02;
+  }
+  100% {
+    scale: 1;
   }
 }
 
