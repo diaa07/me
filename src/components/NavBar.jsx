@@ -90,30 +90,16 @@ export default function NavBar() {
               <div className="nav-menu">
                 <ul>
                   <li onClick={toggleMenuOpen}>
-                    <a href="#home" onClick={(e) => handleScroll(e, "home")}>
-                      Home
-                    </a>
+                    <a href="#home">Home</a>
                   </li>
                   <li onClick={toggleMenuOpen}>
-                    <a href="#about" onClick={(e) => handleScroll(e, "about")}>
-                      About
-                    </a>
+                    <a href="#about">About</a>
                   </li>
                   <li onClick={toggleMenuOpen}>
-                    <a
-                      href="#projects"
-                      onClick={(e) => handleScroll(e, "projects")}
-                    >
-                      Projects
-                    </a>
+                    <a href="#projects">Projects</a>
                   </li>
                   <li onClick={toggleMenuOpen}>
-                    <a
-                      href="#contact"
-                      onClick={(e) => handleScroll(e, "contact")}
-                    >
-                      Contact
-                    </a>
+                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
