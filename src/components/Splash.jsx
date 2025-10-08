@@ -12,16 +12,16 @@ export default function Splash({ isFadingOut }) {
       timeout = setTimeout(() => {
         setText(fullText.slice(0, index));
         setIndex(index + 1);
-      }, 80);
+      }, 50);
     } else if (isDeleting && index >= 0) {
       timeout = setTimeout(() => {
         setText(fullText.slice(0, index));
         setIndex(index - 1);
-      }, 80);
+      }, 50);
     } else if (!isDeleting && index > fullText.length) {
       timeout = setTimeout(() => {
         setIsDeleting(true);
-      }, 1000);
+      }, 800);
     } else if (isDeleting && index === 0) {
       setIsDeleting(false);
       setIndex(0);

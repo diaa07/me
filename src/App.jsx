@@ -13,8 +13,8 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
   const [splashFade, setSplashFade] = useState(false);
   useEffect(() => {
-    const splashDuration = 5500;
-    const fadeDuration = 1500;
+    const splashDuration = 2800;
+    const fadeDuration = 800;
     const splashTimer = setTimeout(() => {
       setShowSplash(false);
     }, splashDuration);
