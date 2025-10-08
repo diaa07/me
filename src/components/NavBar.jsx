@@ -41,7 +41,9 @@ export default function NavBar() {
       <nav className={isHidden ? "nav-hidden" : ""}>
         <div className="nav-left-section">
           <div className="logo">
-            Diaa Aldin <span className="logo-span">Dev</span>
+            <a href="#home">
+              Diaa Aldin <span className="logo-span">Dev</span>
+            </a>
           </div>
         </div>
 
