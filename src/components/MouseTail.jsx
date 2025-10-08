@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import "./MouseTail.css";
 
 export default function MouseTail() {
-  const MAX_TAIL_LENGTH = 15;
+  const MAX_TAIL_LENGTH = 20;
   const EMISSION_RATE = 0;
   const [tail, setTail] = useState([]);
   const lastPosition = useRef({ x: 0, y: 0 });
@@ -37,7 +37,7 @@ export default function MouseTail() {
         }
         return [];
       });
-    }, 30);
+    }, 50);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
@@ -53,7 +53,7 @@ export default function MouseTail() {
         const styling = {
           transform: `translate3d(${p.x}px, ${p.y}px, 0) scale(${scale}) translate(-50% , -50%)`,
           opacity: opacity,
-          transition: "all 0.1s ease-out",
+          transition: "all 0.1s ease",
           padding: 0,
           margin: 0,
         };

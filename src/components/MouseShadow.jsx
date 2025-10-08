@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import "./MouseShadow.css";
 
 export default function MouseShadow() {
-  const SMOOTHING = 0.3;
+  const SMOOTHING = 0.2;
   const glowRef = useRef(null);
   const [targetPos, setTargetPos] = useState({ x: 0, y: 0 });
   const currentPos = useRef({ x: 0, y: 0 });
