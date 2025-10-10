@@ -7,6 +7,7 @@ import codeforcesIcon from "../assets/social/codeforces.png";
 import telegramIcon from "../assets/social/telegram.png";
 import facebookIcon from "../assets/social/facebook.png";
 import instagramIcon from "../assets/social/instagram.png";
+import linkedInIcon from "../assets/social/linkedin.png";
 
 const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_KEY;
@@ -51,6 +52,11 @@ export default function Contact() {
       name: "GitHub",
       url: "https://github.com/diaa07",
       iconSrc: githubIcon,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/diaa-aldin-drak-alsebai-580a70389/",
+      iconSrc: linkedInIcon,
     },
     {
       name: "Codeforces",
