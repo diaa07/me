@@ -1,16 +1,76 @@
-# React + Vite
+# 🚀 Personal Developer Portfolio (Built with React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository holds my personal portfolio website, designed to showcase my technical skills, best projects, and professional background as a specialized Frontend Developer. Built using **React.js** for a dynamic and interactive user experience.
 
-Currently, two official plugins are available:
+## 🖼️ Project Showcase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Portfolio Screenshot](https://github.com/diaa07/images/blob/main/Screenshot%202025-10-10%20173657.png)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Live Demo
 
-## Expanding the ESLint configuration
+[![Live Demo](https://img.shields.io/badge/View_Website-2D99FF?style=for-the-badge&logo=vercel&logoColor=white)](https://diaa07.github.io/me/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌟 Key Features
+
+- **Project Showcase:** A dedicated **Projects** section with direct links to live applications and source code.
+- **Responsive Design:** Features a modern layout that adapts flawlessly to all screen sizes (Desktop, Tablet, Mobile).
+- **Enhanced UX/UI:** Includes a custom **Splash Screen** and unique visual effects (like the **Mouse Tail/Shadow**) for a memorable user experience.
+- **Seamless Navigation:** Organized sections (Home, About, Projects, Contact) via a clear **NavBar** component.
+
+---
+
+## 🛠️ Tech Stack
+
+This project was built using the following core technologies:
+
+| Technology     | Badge                                                                                                             |
+| :------------- | :---------------------------------------------------------------------------------------------------------------- |
+| **React**      | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)               |
+| **JavaScript** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+| **CSS3**       | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)                   |
+
+---
+
+## ⬇️ Installation & Local Setup
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Ensure you have **Node.js** and **npm** installed on your system.
+
+### Steps
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone [https://github.com/diaa07/me.git](https://github.com/diaa07/me.git)
+    cd me
+    ```
+
+2.  **Install NPM packages:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the project:**
+    ```bash
+    npm start
+    ```
+    The application will open automatically in your browser at `http://localhost:3000/`.
+
+---
+
+## ✉️ Contact
+
+Feel free to connect or reach out for professional opportunities.
+
+- **GitHub Profile:** [diaa07](https://github.com/diaa07)
+- **Email:** `diaa.alsebai.dev@gmail.com`
+- **Telegram:** [ThaCodeFather](https://t.me/ThaCodeFather)
+- **Codeforces Profile:** [binlaggin](https://codeforces.com/profile/binlaggin)
