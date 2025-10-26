@@ -55,7 +55,7 @@ export default function Contact() {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/diaa-aldin-drak-alsebai-580a70389/",
+      url: "https://www.linkedin.com/in/diaa-aldin-drak-alsebai-6505ab293",
       iconSrc: linkedInIcon,
     },
     {
@@ -65,7 +65,7 @@ export default function Contact() {
     },
     {
       name: "Telegram",
-      url: "t.me/ThaCodeFather",
+      url: "https://t.me/ThaCodeFather",
       iconSrc: telegramIcon,
     },
     {
